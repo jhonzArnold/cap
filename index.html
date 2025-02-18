@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .banner {
+            position: relative;
+        }
+
+        .imagotipo {
+            position: relative; /* Asegúrate de que el contenedor esté en posición relativa */
+            text-align: center; /* Centra el texto */
+        }
+
+        .imagotipo--info {
+            position: absolute; 
+            bottom: 60px; /* Ajusta la distancia desde el fondo para que no se crucen */
+            left: 50%; 
+            transform: translateX(-50%); 
+            color: white; 
+            text-align: center; 
+            z-index: 1; /* Asegúrate de que esté por encima del video */
+        }
+
+        .titulo {
+            margin-top: 10px; 
+            color: white; 
+            z-index: 1; /* Asegúrate de que el título esté por encima del video */
+            position: relative; /* Asegura que el título se posicione correctamente */
+        }
+    </style>
+</head>
+<body>
+    <aside class="background--banner">
+        <video muted autoplay loop poster="Multimedia/background-image.webp">
+            <source src="Multimedia/background-video.mp4" type="video/mp4">
+            <img src="Multimedia/background-image.webp" alt="Imagen background">
+        </video>
+        <div class="banner">
+            <div class="menu">
+                <nav>
+                    <ul class="navegacion navegacion--izquierda">
+                        <li class="logo"><a href="#"><img src="Multimedia/netflix.png" alt="Netflix"></a></li>
+                        <a href="#">Televisión</a>
+                        <a href="#">Series</a>
+                        <a href="#">Peliculas</a>
+                    </ul>
+                </nav>
+                <nav></nav>
+            </div>
+            <div class="imagotipo">
+                <div class="imagotipo--imagen">
+                    <img src="Multimedia/imagotipo-jurassic.webp" alt="Imagotipo">
+                </div>
+                <br></br>
+                <br><div class="imagotipo--info"></br>
+                    <p>⏵Play</p>
+                    <p>ⓘ More Info</p>
+                </div>
+                
+                <h1 class="titulo">Películas Populares</h1> <!-- Título aquí -->
+            </div>
+            
+        </div>
+    </aside>
+    
+    <main class="catalogos">
+        <section class="catalogo--peliculas">
+            <div class="peliculas" id="populares">
+                <!-- Aquí irán las películas populares -->
+            </div>
+        </section>
+        <section class="catalogo--peliculas">
+            <h2>Películas de Estreno</h2>
+            <div class="peliculas" id="estreno">
+                <!-- Aquí irán las películas de estreno -->
+            </div>
+        </section>
+        <section class="catalogo--peliculas">
+            <h2>Películas más vistas</h2>
+            <div class="peliculas" id="vistas">
+                <!-- Aquí irán las películas más vistas -->
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer--contenedor">
+            <ul class="iconos">
+                <li><a href="#"><img src="Multimedia/facebook.svg" alt="facebook"></a></li>
+                <li><a href="#"><img src="Multimedia/instagram.svg" alt="instagram"></a></li>
+                <li><a href="#"><img src="Multimedia/github.svg" alt="github"></a></li>
+                <li><a href="#"><img src="Multimedia/linkedin.svg" alt="linkedin"></a></li>
+            </ul>
+            <div class="informacion">
+                <p>Preguntas frecuentes</p>
+                <p>Prensa</p>
+                <p>Formas de ver</p>
+                <p>Preferencias de cookies</p>
+                <p>Pruebas de velocidad</p>
+                <p>Centro de ayuda</p>
+                <p>Relaciones con inversionistas</p>
+                <p>Terminos de uso</p>
+                <p>Informacion corporativa</p>
+                <p>Cuenta</p>
+                <p>Empleo</p>
+                <p>Privacidad</p>
+                <p>Contactanos</p>
+                <p>Solo en netflix</p>
+            </div>
+            <p class="idioma">🌎︎ Español</p>
+            <p class="contruccion">@capidev 2023</p>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
